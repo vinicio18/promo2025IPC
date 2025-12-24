@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: #333;
+    overflow-x: auto; /* permite desplazarse horizontalmente si no cabe */
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    min-width: 600px; /* mínimo para evitar que se amontonen en móviles muy estrechos */
+  }
+
+  .menu li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .menu li a:hover {
+    background-color: #007BFF;
+  }
+
+  /* Texto adaptable */
+  .menu li a h1 {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  /* Opcional: para pantallas pequeñas, reducir tamaño de texto */
+  @media screen and (max-width: 500px) {
+    .menu li a h1 {
+      font-size: 14px;
+    }
+  }    
+.imgcir {
+  display: flex;
+  flex-wrap: wrap; /* Permite varias imágenes en filas */
+  justify-content: center; /* Centra las imágenes */
+  gap: 10px; /* Espacio entre imágenes */
+  border-radius: 25%;
+  border: 3px solid #000;
+  overflow: hidden;
+  background-color: rgb(142, 202, 241);
+  padding: 10px;
+}
+
+.imgcir img {
+  width: 225px; /* tamaño fijo */
+  height: 225px; /* tamaño fijo */
+  object-fit: cover; /* mantiene proporciones y llena el espacio */
+  border-radius: 20%;
+  border: 2px solid #000;
+}
+
+.inicio{
+  width: 100%;
+    background-color: rgb(69, 151, 206);
+h1{
+    color: rgb(73, 73, 209);
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: 25%;
+}
+p{
+    color: rgb(26, 26, 102);
+    width: 80%;             
+    margin: 0 auto;         
+    text-align: center;  
+}
+}
+.mivis{
+    h2{
+        color: rgb(104, 44, 44);
+        font-size: 100;
+    }
+    p{
+        color: blue;
+        width: 80%;             
+        margin: 0 auto;         
+        text-align: center;  
+    }
+}
+p{
+    color: rgb(8, 8, 8);
+    
+      width: 80%;             
+      margin: 0 auto;         
+      text-align: center;    
+}
+body{
+    background-color: rgb(16, 243, 167);
+}
+
+.icon{
+  border-radius: 120%;
+}
+
+h2{
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 90%;
+  }
+}
+.producto img {
+  width: 100%;
+  height: auto;
+}
+h1, h2, h3 {
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
+
+.productos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+
+input, select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
